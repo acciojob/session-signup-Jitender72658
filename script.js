@@ -13,7 +13,7 @@ form.addEventListener('submit' ,function (event){
 			    'email': email,
 			    'password': password
 			};
-		localStorage.setItem('data', JSON.stringify(data));
+		sessionStorage.setItem('data', JSON.stringify(data));
 		alert("Sign up successful!");
 	}
 	else{
