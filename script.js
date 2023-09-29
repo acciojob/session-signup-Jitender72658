@@ -10,8 +10,8 @@ form.addEventListener('submit' ,function (event){
 	if(pass===confirmPass){
 		sessionStorage.setItem('name', name);
 		sessionStorage.setItem('email', email);
-		sessionStorage.setItem('password', password);
-		alert("Sign up successful!");
+		sessionStorage.setItem('password', pass);
+		alert(`Sign up successful!`);
 	}
 	else{
 		alert("Passwords do not match");
