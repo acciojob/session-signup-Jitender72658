@@ -8,12 +8,9 @@ form.addEventListener('submit' ,function (event){
 	let pass = document.getElementById('password').value.trim();
 	let confirmPass = document.getElementById('confirm-password').value.trim();
 	if(pass===confirmPass){
-		let data = {
-			    'name': name,
-			    'email': email,
-			    'password': password
-			};
-		sessionStorage.setItem('Test User', JSON.stringify(data));
+		sessionStorage.setItem('name', name);
+		sessionStorage.setItem('email', email);
+		sessionStorage.setItem('password', password);
 		alert("Sign up successful!");
 	}
 	else{
