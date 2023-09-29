@@ -1,6 +1,6 @@
 //your JS code here. If required.
 const form = document.getElementById('signup-form');
-const submitBtn = document.getElementById('submitBtn');
+const submitBtn = document.getElementById('submit');
 form.addEventListener('submit' ,function (event){
 	event.preventDefault();
 	let name = document.getElementById('name').value.trim();
